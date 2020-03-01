@@ -20,12 +20,12 @@ namespace HelloWorld
             Console.ReadKey();
 
             bool myBool = true;
-            int x = 5;
-            double y = 5.5;
-            char z = 'z';
-            string word = "Something";
+            int myInt = 5;
+            double myDouble = 5.5;
+            char myChar = 'z';
+            string myString = "Something";
 
-            Console.WriteLine(myBool + ", " + x + ", " + y + ", " + z + ", " + word);
+            Console.WriteLine(myBool + ", " + myInt + ", " + myDouble + ", " + myChar + ", " + myString);
             Console.ReadKey();
 
             int maxVal = int.MaxValue;
@@ -43,6 +43,12 @@ namespace HelloWorld
             Console.WriteLine(implicitBool + ", " + implicitInt + ", " + implicitDouble + ", " + implicitChar + ", " + implicitString);
             Console.ReadKey();
 
+            int x = 10; //will return final x value
+            int y = 20; // will return final y value
+            int z1 = x++; // will return current x value then increment that value
+            int z2 = ++y; // will first increment y value then return it 
+            Console.WriteLine(x + ", " + y + ", " + z1 + ", " + z2);
+            Console.ReadKey();
 
         }
     }
