@@ -138,6 +138,11 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(searchIndex + " " + searchIfPresent + " " + fileName + " " + driveName);
             Console.ReadKey();
 
+            string splittingX = "A story starts at the beginning.";
+            string[] splitX = splittingX.Split();
+            Console.WriteLine(splitX);
+            Console.ReadKey();
+
         }
     }
 }
