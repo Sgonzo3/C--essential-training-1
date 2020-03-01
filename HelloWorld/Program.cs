@@ -18,6 +18,11 @@ namespace HelloWorld
             */
             Console.WriteLine("Hello World!");
             Console.ReadKey();
+
+            bool myBool = true;
+            int x = 5;
+            double y = 5.5;
+            char z = 'z';
         }
     }
 }
