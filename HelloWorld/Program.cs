@@ -148,6 +148,28 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(formatY);
             Console.ReadKey();
 
+            bool parsingA = true;
+            int parsingB = 6;
+            double parsingC = 8.91;
+            char parsingD = 'x';
+            string parsingW = parsingA.ToString();
+            string parsingX = parsingB.ToString();
+            string parsingY = parsingC.ToString();
+            string parsingZ = parsingD.ToString();
+            bool parsingE = bool.Parse(parsingW);
+            int parsingF = int.Parse(parsingX);
+            double parsingG = double.Parse(parsingY);
+            char parsingH = char.Parse(parsingZ);
+            Console.WriteLine(parsingE);
+            Console.ReadKey();
+            Console.WriteLine(parsingF);
+            Console.ReadKey();
+            Console.WriteLine(parsingG);
+            Console.ReadKey();
+            Console.WriteLine(parsingH);
+            Console.ReadKey();
+
+
         }
     }
 }
