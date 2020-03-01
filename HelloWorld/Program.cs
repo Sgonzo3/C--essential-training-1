@@ -110,6 +110,12 @@ on multiple lines, without needing to use escape sequences.";
             string firstMiddleLast = firstLetter.ToString() + secondLetter.ToString() + lastLetter.ToString();
             Console.WriteLine(firstMiddleLast);
             Console.ReadKey();
+
+            string caseChange = "Alphabet";
+            string caseChangeUpper = caseChange.ToUpper();
+            string caseChangeLower = caseChange.ToLower();
+            Console.WriteLine(caseChange + " " + caseChangeUpper + " " + caseChangeLower);
+            Console.ReadKey();
         }
     }
 }
