@@ -17,6 +17,14 @@ namespace HelloWorld
 
         }
     }
+    public class Structs
+    {
+        public struct myStruct
+        {
+            public string name;
+            public int age;
+        }
+    }
     class Program
     {
         /// <summary>
@@ -187,6 +195,14 @@ on multiple lines, without needing to use escape sequences.";
             var bestDay = HelloWorld.Enumerations.weekdays.Saturday;
             Console.WriteLine(bestDay + " " + (int)bestDay);
             Console.ReadKey();
+
+            var structX = new Structs.myStruct();
+            var structY = new Structs.myStruct();
+            structX.name = structY.name;
+            structX.age = structY.age;
+            Console.WriteLine(structX.name + ' ' + structX.age);
+            Console.ReadKey();
+
 
         }
     }
