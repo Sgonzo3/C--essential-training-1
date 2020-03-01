@@ -50,6 +50,22 @@ namespace HelloWorld
             Console.WriteLine(x + ", " + y + ", " + z1 + ", " + z2);
             Console.ReadKey();
 
+            int mathX = 5;
+            int mathY = 10;
+            int mathZ = 15;
+            int mathA = mathX + mathY;
+            int mathB = mathY * mathZ;
+            int mathC = mathZ - mathX;
+            bool isEvenX = (mathX % 2) == 0;
+            bool notDivisibleBy3Y = (mathY % 3 == 0);
+            double roundDouble(double input)
+            {
+                decimal newNumber = (decimal)input;
+                newNumber = Math.Round(newNumber, 3);
+                return (double)newNumber;
+            } 
+            Console.WriteLine(mathX + ", " + mathY + ", " + mathZ + ", " + mathA + ", " + mathB + ", " + mathC + ", " + isEvenX + ", " + notDivisibleBy3Y + ", " + roundDouble(2.345199));
+            Console.ReadKey();
         }
     }
 }
