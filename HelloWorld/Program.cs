@@ -143,6 +143,11 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(splitX);
             Console.ReadKey();
 
+            const string formatX = "The {0} {1} over the fence.";
+            string formatY = String.Format(formatX, "dog", "jumped");
+            Console.WriteLine(formatY);
+            Console.ReadKey();
+
         }
     }
 }
