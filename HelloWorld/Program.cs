@@ -28,6 +28,14 @@ namespace HelloWorld
             Console.WriteLine(myBool + ", " + x + ", " + y + ", " + z + ", " + word);
             Console.ReadKey();
 
+            int maxVal = int.MaxValue;
+            Console.WriteLine(maxVal);
+            Console.ReadKey();
+            maxVal++;
+            Console.WriteLine(maxVal); // becomes negative value
+            Console.ReadKey();
+
+
         }
     }
 }
