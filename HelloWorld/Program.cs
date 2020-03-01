@@ -2,6 +2,21 @@
 
 namespace HelloWorld
 {
+    
+    public class Enumerations
+    {
+        public enum weekdays
+        {
+            Sunday,
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday
+
+        }
+    }
     class Program
     {
         /// <summary>
@@ -169,6 +184,9 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(parsingH);
             Console.ReadKey();
 
+            var bestDay = HelloWorld.Enumerations.weekdays.Saturday;
+            Console.WriteLine(bestDay + " " + (int)bestDay);
+            Console.ReadKey();
 
         }
     }
