@@ -203,6 +203,18 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(structX.name + ' ' + structX.age);
             Console.ReadKey();
 
+            void consoleApp()
+            {
+                Console.WriteLine("Enter First Name...");
+                Console.ReadLine();
+                Console.WriteLine("Enter Middle Name...");
+                Console.ReadLine();
+                Console.WriteLine("Enter Last Name...");
+                Console.ReadLine();
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadKey();
+            }
+            consoleApp();
 
         }
     }
