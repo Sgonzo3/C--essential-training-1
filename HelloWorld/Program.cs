@@ -92,6 +92,12 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(literalString);
             Console.ReadKey();
 
+            string stringOne = "This is a ";
+            string stringTwo = "Concatenated String.";
+            string concatenatedSentance = stringOne + stringTwo;
+            Console.WriteLine(concatenatedSentance);
+            Console.ReadKey();
+
         }
     }
 }
