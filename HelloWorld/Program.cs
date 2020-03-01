@@ -98,6 +98,11 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(concatenatedSentance);
             Console.ReadKey();
 
+            string stringWithLength = "Some string of Text.";
+            stringWithLength = stringWithLength + " Length:" + stringWithLength.Length;
+            Console.WriteLine(stringWithLength);
+            Console.ReadKey();
+
         }
     }
 }
