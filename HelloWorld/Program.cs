@@ -103,6 +103,13 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(stringWithLength);
             Console.ReadKey();
 
+            string oddString = "seventy";
+            char firstLetter = oddString[0];
+            char secondLetter = oddString[(oddString.Length / 2)];
+            char lastLetter = oddString[oddString.Length - 1];
+            string firstMiddleLast = firstLetter.ToString() + secondLetter.ToString() + lastLetter.ToString();
+            Console.WriteLine(firstMiddleLast);
+            Console.ReadKey();
         }
     }
 }
