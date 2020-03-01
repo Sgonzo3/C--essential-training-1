@@ -80,8 +80,16 @@ namespace HelloWorld
             int convertedA = (int) convertA;
             int convertedB = (int) convertB;
             int convertedC = (int) convertC;
-
             Console.WriteLine(convertedX + ", " + convertedY + ", " + convertedZ + ", " + convertedA + ", " + convertedB + ", " + convertedC);
+            Console.ReadKey();
+
+            string escapeSequence = "Some text on line one \n Some text on line two";
+            Console.WriteLine(escapeSequence);
+            Console.ReadKey();
+
+            string literalString = @"A line of text that will print as written
+on multiple lines, without needing to use escape sequences.";
+            Console.WriteLine(literalString);
             Console.ReadKey();
 
         }
