@@ -116,6 +116,15 @@ on multiple lines, without needing to use escape sequences.";
             string caseChangeLower = caseChange.ToLower();
             Console.WriteLine(caseChange + " " + caseChangeUpper + " " + caseChangeLower);
             Console.ReadKey();
+
+            string wholeString = "Hypothetical";
+            string wholeSecondString = "Certain";
+            Console.WriteLine(wholeString.Substring(1, wholeString.Length-2) + " " + wholeSecondString.Substring(1, wholeSecondString.Length -2));
+            Console.ReadKey();
+            Console.WriteLine(wholeString.Remove(wholeString.Length - 1).Remove(0, 1) + " " + wholeSecondString.Remove(wholeSecondString.Length - 1).Remove(0, 1));
+            Console.ReadKey();
+
+
         }
     }
 }
