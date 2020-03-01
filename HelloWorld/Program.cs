@@ -16,6 +16,14 @@ namespace HelloWorld
             Saturday
 
         }
+
+        public enum Direction
+        {
+            Up,
+            Down,
+            Left,
+            Right
+        }
     }
     public class Structs
     {
@@ -216,6 +224,30 @@ on multiple lines, without needing to use escape sequences.";
             }
             consoleApp();
 
+            //CommandLine
+
+            // Part 2
+            // Conditionals
+            string ifElse(int conditionalX)
+            {
+                if (conditionalX < 100)
+                {
+                    return "x is less than 100";
+                }
+                else if (conditionalX == 100)
+                {
+                    return "x is 100";
+                }
+                else
+                {
+                    return "x is greater than 100";
+                }
+
+            }
+            Console.WriteLine(ifElse(1));
+            Console.WriteLine(ifElse(100));
+            Console.WriteLine(ifElse(1000));
+            Console.ReadKey();
         }
     }
 }
