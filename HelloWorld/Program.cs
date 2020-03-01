@@ -35,6 +35,14 @@ namespace HelloWorld
             Console.WriteLine(maxVal); // becomes negative value
             Console.ReadKey();
 
+            var implicitBool = true;
+            var implicitInt = 5;
+            var implicitDouble = 5.5;
+            var implicitChar = 'z';
+            var implicitString = "Something";
+            Console.WriteLine(implicitBool + ", " + implicitInt + ", " + implicitDouble + ", " + implicitChar + ", " + implicitString);
+            Console.ReadKey();
+
 
         }
     }
