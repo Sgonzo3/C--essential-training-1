@@ -23,6 +23,11 @@ namespace HelloWorld
             int x = 5;
             double y = 5.5;
             char z = 'z';
+            string word = "Something";
+
+            Console.WriteLine(myBool + ", " + x + ", " + y + ", " + z + ", " + word);
+            Console.ReadKey();
+
         }
     }
 }
