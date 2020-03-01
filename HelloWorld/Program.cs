@@ -66,6 +66,24 @@ namespace HelloWorld
             } 
             Console.WriteLine(mathX + ", " + mathY + ", " + mathZ + ", " + mathA + ", " + mathB + ", " + mathC + ", " + isEvenX + ", " + notDivisibleBy3Y + ", " + roundDouble(2.345199));
             Console.ReadKey();
+
+            int convertX = 100;
+            int convertY = 200;
+            int convertZ = 300;
+            double convertA = 1000;
+            double convertB = 2000;
+            double convertC = 3000;
+
+            double convertedX = (double)convertX;
+            double convertedY = (double)convertY;
+            double convertedZ = (double)convertZ;
+            int convertedA = (int) convertA;
+            int convertedB = (int) convertB;
+            int convertedC = (int) convertC;
+
+            Console.WriteLine(convertedX + ", " + convertedY + ", " + convertedZ + ", " + convertedA + ", " + convertedB + ", " + convertedC);
+            Console.ReadKey();
+
         }
     }
 }
