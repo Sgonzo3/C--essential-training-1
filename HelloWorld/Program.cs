@@ -124,6 +124,19 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(wholeString.Remove(wholeString.Length - 1).Remove(0, 1) + " " + wholeSecondString.Remove(wholeSecondString.Length - 1).Remove(0, 1));
             Console.ReadKey();
 
+            string searchX = "civilization";
+            char searchY = 'z';
+            int searchIndex = searchX.IndexOf(searchY);
+            bool searchIfPresent = searchX.Contains(searchY);
+            string fakePath = @"c:\foo\bar.txt";
+            char backSlash = '\\';
+            int firstSemiColon = fakePath.IndexOf(':');
+            int lastBackSlash = fakePath.LastIndexOf(backSlash) + 1;
+            int firstDot = fakePath.IndexOf('.');
+            string fileName = fakePath.Substring(lastBackSlash, firstDot - lastBackSlash);
+            string driveName = fakePath.Substring(0, firstSemiColon);
+            Console.WriteLine(searchIndex + " " + searchIfPresent + " " + fileName + " " + driveName);
+            Console.ReadKey();
 
         }
     }
