@@ -350,6 +350,22 @@ on multiple lines, without needing to use escape sequences.";
                 position++;
             }
 
+
+            // do while
+            Console.WriteLine(" ");
+            int doWhileCurrent = 0;
+            do
+            {
+                if (loopString[doWhileCurrent] % 2 != 0)
+                {
+                    Console.Write(loopString[doWhileCurrent]);
+                }
+                doWhileCurrent++;
+            }
+            while (doWhileCurrent < loopString.Length);
+
+
+
         }
     }
 }
