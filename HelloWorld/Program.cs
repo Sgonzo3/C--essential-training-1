@@ -426,7 +426,22 @@ on multiple lines, without needing to use escape sequences.";
             }
             Console.WriteLine(' ');
             Console.WriteLine(singleDimensionalSum);
-            
+            Console.ReadKey();
+
+            //multidimensionalArrays
+            var multiDimesionalArray = new int[4, 4];
+            for(var i = 0; i < 4; i++)
+            {
+                for(var j = 0; j < 4; j++)
+                {
+                    multiDimesionalArray[i, j] = i * j;
+                }
+            }
+            foreach (int index in multiDimesionalArray)
+            {
+                Console.Write(index);
+            }
+
         }
     }
 }
