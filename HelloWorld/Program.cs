@@ -228,6 +228,7 @@ on multiple lines, without needing to use escape sequences.";
 
             // Part 2
             // Conditionals
+            //if/else
             string ifElse(int conditionalX)
             {
                 if (conditionalX < 100)
@@ -248,6 +249,35 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(ifElse(100));
             Console.WriteLine(ifElse(1000));
             Console.ReadKey();
+
+            // switch
+            var weekday = Enumerations.weekdays.Saturday;
+
+            switch (weekday.ToString())
+            {
+                case "Saturday":
+                case "Sunday":
+                    Console.WriteLine("It's the weekend.");
+                    break;
+                case "Monday":
+                    Console.WriteLine("Just starting.");
+                    break;
+                case "Tuesday":
+                    Console.WriteLine("Still going.");
+                    break;
+                case "Wednesday":
+                    Console.WriteLine("Halfway.");
+                    break;
+                case "Thursday":
+                    Console.WriteLine("Almost there.");
+                    break;
+                case "Friday":
+                    Console.WriteLine("About Done.");
+                    break;
+            }
+
+
+
         }
     }
 }
