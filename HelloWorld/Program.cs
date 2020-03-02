@@ -299,7 +299,7 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(operationCheck("applesauce"));
             Console.ReadKey();
 
-            // nested Conditionals
+            // nested Conditionalsg
             string nestedConditional(string s)
             {
                 if(s.Length < 5)
@@ -329,6 +329,27 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(nestedConditional("Two"));
             Console.WriteLine(nestedConditional("applesauce"));
             Console.ReadKey();
+
+            // loops
+            // while loop
+
+            //while(true)
+            //{
+            //    Console.WriteLine("Bad");
+            //    // repeats infinitely
+            //}
+
+            string loopString = "0123456789";
+            int position = 0;
+            while(position < loopString.Length)
+            {
+                if(loopString[position] % 2 != 0)
+                {
+                    Console.Write(loopString[position]);
+                }
+                position++;
+            }
+
         }
     }
 }
