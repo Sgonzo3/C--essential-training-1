@@ -225,6 +225,7 @@ on multiple lines, without needing to use escape sequences.";
             consoleApp();
 
             //CommandLine
+            // todo
 
             // Part 2
             // Conditionals
@@ -299,7 +300,7 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(operationCheck("applesauce"));
             Console.ReadKey();
 
-            // nested Conditionalsg
+            // nested Conditionals
             string nestedConditional(string s)
             {
                 if(s.Length < 5)
@@ -385,6 +386,7 @@ on multiple lines, without needing to use escape sequences.";
             }
 
             // nested Loops
+            // TODO
             Console.WriteLine(" ");
             string loopHat = "13579";
 
@@ -406,6 +408,25 @@ on multiple lines, without needing to use escape sequences.";
                     continue;
                 }
             }
+
+            // Arrays
+            // single dimensional Arrays
+            int[] singleDimensionalArray = new int[10];
+            int singleDimensionalCurrent = 0;
+            int singleDimensionalSum = 0;
+            while (singleDimensionalCurrent < singleDimensionalArray.Length)
+            {
+                singleDimensionalArray[singleDimensionalCurrent] = singleDimensionalCurrent + 1;
+                singleDimensionalCurrent++;
+            }
+            for(var i = singleDimensionalArray.Length; i > 0; i--)
+            {
+                singleDimensionalSum += singleDimensionalArray[i - 1];
+                Console.Write(singleDimensionalArray[i - 1]);
+            }
+            Console.WriteLine(' ');
+            Console.WriteLine(singleDimensionalSum);
+            
         }
     }
 }
