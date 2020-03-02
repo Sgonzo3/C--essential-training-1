@@ -383,6 +383,29 @@ on multiple lines, without needing to use escape sequences.";
                     Console.Write(number);
                 }
             }
+
+            // nested Loops
+            Console.WriteLine(" ");
+            string loopHat = "13579";
+
+            foreach (char number in loopHat)
+            {
+
+            }
+
+            // loop flow control
+            string flowControlString = "screenshot";
+            foreach (char letter in flowControlString)
+            {
+                if (flowControlString.Substring(1).Contains(letter))
+                {
+                    Console.WriteLine(flowControlString.Substring(1).IndexOf(letter) + 1);
+                    break;
+                } else
+                {
+                    continue;
+                }
+            }
         }
     }
 }
