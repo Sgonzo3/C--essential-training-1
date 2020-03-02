@@ -441,6 +441,73 @@ on multiple lines, without needing to use escape sequences.";
             {
                 Console.Write(index);
             }
+            Console.WriteLine(" ");
+
+            // Functions
+            // basic functions
+            void printString(string input)
+            {
+                Console.WriteLine(input);
+            }
+            printString("Testing");
+
+            string concatenateThreeStrings(string x, string y, string z)
+            {
+                return x + y + z;
+            }
+            Console.WriteLine(concatenateThreeStrings("One", "Two", "Three."));
+
+            void arrayAdjuster(int[] targetArray, int index, int value)
+            {
+                if (index >= targetArray.Length)
+                {
+                    return;
+                } else
+                {
+                    targetArray[index] = value;
+                }
+            }
+            var testArray = new int[4];
+            arrayAdjuster(testArray, 2, 234);
+            Console.WriteLine(testArray[2]);
+            Console.ReadKey();
+
+            string everyOtherWord(string targetString)
+            {
+                string answer = "";
+                string[] stringArray = targetString.Split(' ');
+                for(var i = 0; i < stringArray.Length; i++)
+                {
+                    if(i % 2 == 0)
+                    {
+                        answer += stringArray[i] + " ";
+                    }
+                }
+                return answer;
+            }
+            Console.WriteLine(everyOtherWord("To be or not to be"));
+            Console.ReadKey();
+
+            string substringifier(string targetString, int index = 0, int length = 0)
+            {
+                if (length == 0)
+                {
+                    length = targetString.Length-1;
+                }
+                if (index >= targetString.Length || length >= targetString.Length || length + index >= targetString.Length)
+                {
+                    return " ";
+                }
+                return targetString.Substring(index, length);
+            }
+            Console.WriteLine(substringifier("watermelon"));
+            Console.WriteLine(substringifier("watermelon", 3));
+            Console.WriteLine(substringifier("watermelon", 3, 2));
+            Console.WriteLine(substringifier("watermelon", 3, 7));
+
+
+
+
 
         }
     }
