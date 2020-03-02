@@ -364,8 +364,15 @@ on multiple lines, without needing to use escape sequences.";
             }
             while (doWhileCurrent < loopString.Length);
 
-
-
+            // for loop
+            Console.WriteLine(" ");
+            for (int i = 0; i < loopString.Length; i++)
+            {
+                if (loopString[i] % 2 != 0)
+                {
+                    Console.Write(loopString[i]);
+                }
+            }
         }
     }
 }
