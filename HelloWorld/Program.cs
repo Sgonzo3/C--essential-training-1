@@ -258,24 +258,46 @@ on multiple lines, without needing to use escape sequences.";
                 case "Saturday":
                 case "Sunday":
                     Console.WriteLine("It's the weekend.");
+                    Console.ReadKey();
                     break;
                 case "Monday":
                     Console.WriteLine("Just starting.");
+                    Console.ReadKey();
                     break;
                 case "Tuesday":
                     Console.WriteLine("Still going.");
+                    Console.ReadKey();
                     break;
                 case "Wednesday":
                     Console.WriteLine("Halfway.");
+                    Console.ReadKey();
                     break;
                 case "Thursday":
                     Console.WriteLine("Almost there.");
+                    Console.ReadKey();
                     break;
                 case "Friday":
                     Console.WriteLine("About Done.");
+                    Console.ReadKey();
                     break;
             }
 
+            // order of operations
+            string operationCheck( string s)
+            {
+                if ((s.Length < 5 && s.Length % 2 != 0) || (s.Length >= 10 && s.Length % 2 == 0))
+                {
+                    return s + " meets this condition.";
+                }
+                else
+                {
+                    return s + " does not meeet the condition.";
+                }
+            }
+            Console.WriteLine(operationCheck("hibiscus"));
+            Console.WriteLine(operationCheck("Two"));
+            Console.WriteLine(operationCheck("applesauce"));
+            Console.ReadKey();
 
 
         }
