@@ -505,9 +505,21 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(substringifier("watermelon", 3, 2));
             Console.WriteLine(substringifier("watermelon", 3, 7));
 
-
-
-
+            // reference type equality
+            bool AreArraysEqual(int[] firstArray, int[] secondArray)
+            {
+                for(var i = 0; i < firstArray.Length; i++)
+                {
+                    if(firstArray.Length != secondArray.Length || firstArray[i] != secondArray[i])
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            Console.WriteLine(AreArraysEqual(new int[] { 1, 2, 3 }, new int[] { 2, 3, 4 }));
+            Console.WriteLine(AreArraysEqual(new int[] { 1, 2, 3 }, new int[] { 1, 2, 3 }));
+            Console.ReadKey();
 
         }
     }
