@@ -522,7 +522,6 @@ on multiple lines, without needing to use escape sequences.";
             Console.ReadKey();
 
             // output parameters
-            // TODO
             void integerCompare(int firstInt, int secondInt, out int sum, out int difference, out int product, out int quotient)
             {
                 sum = firstInt + secondInt;
@@ -536,8 +535,9 @@ on multiple lines, without needing to use escape sequences.";
             int product;
             int quotient;
 
-            //Console.WriteLine(integerCompare( 5, 7, out sum, out difference, out product, out quotient));
-            //Console.ReadKey();
+            integerCompare(5, 7, out sum, out difference, out product, out quotient);
+            Console.WriteLine( 5 + " " + 7 + " " + sum + " " + difference + " " + product + " " + quotient);
+            Console.ReadKey();
 
             //reference parameters
             char findChar(string input, int number){
