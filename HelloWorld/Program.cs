@@ -299,7 +299,36 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(operationCheck("applesauce"));
             Console.ReadKey();
 
-
+            // nested Conditionals
+            string nestedConditional(string s)
+            {
+                if(s.Length < 5)
+                {
+                    if(s.Length % 2 != 0)
+                    {
+                        return s + " meets this condition.";
+                    } else
+                    {
+                        return s + " does not meeet the condition.";
+                    } 
+                } else if (s.Length >= 10)
+                {
+                    if(s.Length % 2 == 0)
+                    {
+                        return s + " meets this condition.";
+                    } else
+                    {
+                        return s + " does not meeet the condition.";
+                    }
+                } else
+                {
+                    return s + " does not meeet the condition.";
+                }
+            }
+            Console.WriteLine(nestedConditional("hibiscus"));
+            Console.WriteLine(nestedConditional("Two"));
+            Console.WriteLine(nestedConditional("applesauce"));
+            Console.ReadKey();
         }
     }
 }
