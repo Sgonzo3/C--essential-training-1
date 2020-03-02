@@ -373,6 +373,16 @@ on multiple lines, without needing to use escape sequences.";
                     Console.Write(loopString[i]);
                 }
             }
+
+            // forEach
+            Console.WriteLine(" ");
+            foreach (char number in loopString)
+            {
+                if (number % 2 != 0)
+                {
+                    Console.Write(number);
+                }
+            }
         }
     }
 }
