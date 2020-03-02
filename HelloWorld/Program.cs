@@ -521,6 +521,43 @@ on multiple lines, without needing to use escape sequences.";
             Console.WriteLine(AreArraysEqual(new int[] { 1, 2, 3 }, new int[] { 1, 2, 3 }));
             Console.ReadKey();
 
+            // output parameters
+            // TODO
+            void integerCompare(int firstInt, int secondInt, out int sum, out int difference, out int product, out int quotient)
+            {
+                sum = firstInt + secondInt;
+                difference = firstInt - secondInt;
+                product = firstInt * secondInt;
+                quotient = firstInt / secondInt;
+
+            }
+            int sum;
+            int difference;
+            int product;
+            int quotient;
+
+            //Console.WriteLine(integerCompare( 5, 7, out sum, out difference, out product, out quotient));
+            //Console.ReadKey();
+
+            //reference parameters
+            char findChar(string input, int number){
+                if (number < 0)
+                {
+                    number = 0;
+                    return input[0];
+                } else if (number > input.Length)
+                {
+                    number = input.Length - 1;
+                    return input[input.Length - 1];
+                } else
+                {
+                    return input[number];
+                }
+            }
+            Console.WriteLine(findChar("alphabetical", -8));
+            Console.WriteLine(findChar("alphabetical", 9));
+            Console.WriteLine(findChar("alphabetical", 19));
+            Console.ReadKey();
         }
     }
 }
