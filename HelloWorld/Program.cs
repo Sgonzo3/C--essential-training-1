@@ -386,14 +386,19 @@ on multiple lines, without needing to use escape sequences.";
             }
 
             // nested Loops
-            // TODO
+            // TODO not sure this is working
             Console.WriteLine(" ");
-            string loopHat = "13579";
-
+            string loopHat = "12345";
             foreach (char number in loopHat)
             {
-
+                Console.Write(number);
+                for(var i = loopHat.Length-1; i >= 0; i--)
+                {
+                    Console.Write(loopHat[i]);
+                }
+                Console.WriteLine("");
             }
+            Console.WriteLine(" ");
 
             // loop flow control
             string flowControlString = "screenshot";
